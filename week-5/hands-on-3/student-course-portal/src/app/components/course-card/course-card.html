@@ -1,0 +1,17 @@
+<div class="card" [ngClass]="cardClasses" [ngStyle]="{'border-left-color': getBorderStyle()}" appHighlight="lightblue">
+  <h3>{{ course.name }}</h3>
+  <p>Code: {{ course.code }}</p>
+  
+  <ng-container [ngSwitch]="course.gradeStatus">
+    <span *ngSwitchCase="'passed'" class="badge badge-success">Passed</span>
+    <span *ngSwitchCase="'failed'" class="badge badge-danger">Failed</span>
+    <span *ngSwitchCase="'pending'" class="badge badge-warning">Pending</span>
+  </ng-container>
+
+  <p>Credits: {{ course.credits | creditLabel }}</p>
+  
+  <div class="actions">
+    <button (click)="onEnroll()" [disabled]="isEnrolled">Enroll</button>
+    <button (click)="toggleDetails()">Show Details</button>
+  </div>
+</div>
