@@ -1,7 +1,0 @@
-<h1>{{ portalName }}</h1>
-<app-course-summary-widget></app-course-summary-widget>
-<p>Total Available Courses: {{ coursesCount }}</p>
-<button [disabled]="!isPortalActive" (click)="onEnrollClick()">Enroll Now</button>
-<p *ngIf="message">{{ message }}</p>
-<input [(ngModel)]="searchTerm">
-<p>Searching for: {{ searchTerm }}</p>
