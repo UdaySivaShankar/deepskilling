@@ -1,0 +1,10 @@
+<div class="notification-container">
+  <h4>Local Notifications</h4>
+  <button (click)="simulateNotification()">Trigger Notification</button>
+  
+  <ul *ngIf="messages.length > 0">
+    <li *ngFor="let msg of messages" class="toast">
+      {{ msg }}
+    </li>
+  </ul>
+</div>
