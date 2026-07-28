@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Angular Basics", "code": "CS101", "credits": 3, "gradeStatus": "passed" },
+  { "id": 2, "name": "Advanced React", "code": "CS102", "credits": 4, "gradeStatus": "failed" },
+  { "id": 3, "name": "Data Structures", "code": "CS103", "credits": 4, "gradeStatus": "pending" },
+  { "id": 4, "name": "Web Security", "code": "CS104", "credits": 2, "gradeStatus": "passed" },
+  { "id": 5, "name": "Machine Learning", "code": "CS105", "credits": 5, "gradeStatus": "pending" },
+  { "id": 6, "name": "Cloud Computing", "code": "CS106", "credits": 4, "gradeStatus": "passed" }
+]

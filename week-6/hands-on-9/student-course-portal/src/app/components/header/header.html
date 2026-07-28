@@ -1,0 +1,10 @@
+<header>
+  <nav>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a routerLink="/courses" routerLinkActive="active">Courses</a>
+    <a routerLink="/profile" routerLinkActive="active">Profile</a>
+    <button (click)="toggleLogin()">
+      {{ isLoggedIn ? 'Logout' : 'Login' }}
+    </button>
+  </nav>
+</header>
